@@ -19,7 +19,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks for Java, No
 [run]
 
   [[run.images]]
-    image = "registry.cn-hangzhou.aliyuncs.com/goodrain/ubuntu-noble-run:0.0.50"
+    image = "registry.cn-hangzhou.aliyuncs.com/goodrain/ubuntu-noble-run:0.0.73"
 
 [stack]
   id = "io.buildpacks.stacks.noble"
