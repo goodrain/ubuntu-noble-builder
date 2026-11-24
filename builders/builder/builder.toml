@@ -12,16 +12,16 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks for Apt, Jav
   version = "14.3.0"
 
 [[buildpacks]]
-  uri = "docker://docker.io/paketobuildpacks/java:21.4.0"
-  version = "21.4.0"
+  uri = "docker://docker.io/paketobuildpacks/java:22.10.0"
+  version = "22.10.0"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/go:4.19.7"
   version = "4.19.7"
 
 [[buildpacks]]
-  uri = "docker://docker.io/rainbond/nodejs:10.0.3"
-  version = "10.0.3"
+  uri = "docker://docker.io/rainbond/nodejs:10.0.3-security.1"
+  version = "10.0.3-security.1"
 
 [[buildpacks]]
   uri = "docker://docker.io/paketobuildpacks/python:2.44.1"
@@ -58,7 +58,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks for Apt, Jav
 
   [[order.group]]
     id = "paketo-buildpacks/java"
-    version = "21.4.0"
+    version = "22.10.0"
 
 [[order]]
 
@@ -80,7 +80,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks for Apt, Jav
 
   [[order.group]]
     id = "paketo-buildpacks/nodejs"
-    version = "10.0.3"
+    version = "10.0.3-security.1"
 
 [[order]]
 
@@ -118,7 +118,7 @@ description = "Ubuntu 24.04 Noble Numbat base image with buildpacks for Apt, Jav
 [run]
 
   [[run.images]]
-    image = "docker.io/paketobuildpacks/ubuntu-noble-run:latest"
+    image = "docker.io/paketobuildpacks/ubuntu-noble-run:0.0.73"
 
 [stack]
   id = "io.buildpacks.stacks.noble"
